@@ -8,6 +8,7 @@ version = "1.0.0"
 description = "Enterprise-grade GitHub Pull Request analysis with AI-powered insights and professional GUI"
 readme = "README.md"
 license = "MIT"
+license-files = ["LICENSE"]
 authors = [
     {name = "PR Analyzer", email = "contact@example.com"}
 ]
