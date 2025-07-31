@@ -1,0 +1,18 @@
+include README.md
+include USAGE_GUIDE.md
+include LICENSE
+include requirements.txt
+include config/*.yaml
+include config/*.yml
+recursive-include src/pr_analyzer *.py
+recursive-include src/pr_analyzer *.yaml
+recursive-include src/pr_analyzer *.yml
+recursive-include src/pr_analyzer *.json
+recursive-include src/pr_analyzer *.css
+recursive-include src/pr_analyzer *.js
+recursive-include src/pr_analyzer *.html
+recursive-include src/pr_analyzer *.md
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude *.log 
