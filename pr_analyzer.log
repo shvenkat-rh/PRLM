@@ -1,0 +1,68 @@
+2025-07-31 16:25:18,059 - httpx - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-07-31 16:25:41,232 - httpx - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-07-31 16:28:01,731 - src.pr_analyzer.repomix_integration - INFO - Repomix version: 0.2.9
+2025-07-31 16:28:01,734 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-07-31 16:28:01,734 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10e040980>
+2025-07-31 16:28:01,734 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-07-31 16:28:01,734 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-07-31 16:28:01,734 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-07-31 16:28:01,734 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-07-31 16:28:01,734 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-07-31 16:28:01,738 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Thu, 31 Jul 2025 10:58:01 GMT'), (b'Content-Length', b'1711')])
+2025-07-31 16:28:01,739 - httpx - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-07-31 16:28:01,739 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-07-31 16:28:01,739 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-07-31 16:28:01,739 - httpcore.http11 - DEBUG - response_closed.started
+2025-07-31 16:28:01,739 - httpcore.http11 - DEBUG - response_closed.complete
+2025-07-31 16:28:01,740 - src.pr_analyzer.llm_client - ERROR - Error checking ollama models: 'name'
+2025-07-31 16:28:20,196 - src.pr_analyzer.repomix_integration - INFO - Repomix version: 0.2.9
+2025-07-31 16:28:20,198 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-07-31 16:28:20,199 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x106740980>
+2025-07-31 16:28:20,199 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-07-31 16:28:20,199 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-07-31 16:28:20,199 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-07-31 16:28:20,199 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-07-31 16:28:20,199 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-07-31 16:28:20,203 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Thu, 31 Jul 2025 10:58:20 GMT'), (b'Content-Length', b'1711')])
+2025-07-31 16:28:20,203 - httpx - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-07-31 16:28:20,203 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-07-31 16:28:20,203 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-07-31 16:28:20,203 - httpcore.http11 - DEBUG - response_closed.started
+2025-07-31 16:28:20,203 - httpcore.http11 - DEBUG - response_closed.complete
+2025-07-31 16:28:20,204 - src.pr_analyzer.llm_client - WARNING - Model llama3:latest not found. Available models: ["model='deepseek-coder:latest' modified_at=datetime.datetime(2025, 6, 12, 23, 30, 42, 952286, tzinfo=TzInfo(+05:30)) digest='3ddd2d3fc8d2b5fe039d18f859271132fd9c7960ef0be1864984442dc2a915d3' size=776080839 details=ModelDetails(parent_model='', format='gguf', family='llama', families=['llama'], parameter_size='1B', quantization_level='Q4_0')", "model='llama3:latest' modified_at=datetime.datetime(2025, 6, 4, 18, 24, 38, 414301, tzinfo=TzInfo(+05:30)) digest='365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1' size=4661224676 details=ModelDetails(parent_model='', format='gguf', family='llama', families=['llama'], parameter_size='8.0B', quantization_level='Q4_0')", "model='codellama:latest' modified_at=datetime.datetime(2025, 5, 28, 16, 58, 6, 766499, tzinfo=TzInfo(+05:30)) digest='8fdf8f752f6e80de33e82f381aba784c025982752cd1ae9377add66449d2225f' size=3825910662 details=ModelDetails(parent_model='', format='gguf', family='llama', families=None, parameter_size='7B', quantization_level='Q4_0')", "model='nomic-embed-text:latest' modified_at=datetime.datetime(2025, 5, 27, 15, 57, 49, 262611, tzinfo=TzInfo(+05:30)) digest='0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f' size=274302450 details=ModelDetails(parent_model='', format='gguf', family='nomic-bert', families=['nomic-bert'], parameter_size='137M', quantization_level='F16')", "model='granite-code:3b' modified_at=datetime.datetime(2025, 5, 23, 21, 14, 33, 901836, tzinfo=TzInfo(+05:30)) digest='becc94fe18760be2de6f1c8b0a5ce3656bcf1f3a6b8a2e48519098fa214a149b' size=1997354777 details=ModelDetails(parent_model='', format='gguf', family='llama', families=['llama'], parameter_size='3.5B', quantization_level='Q4_0')"]
+2025-07-31 16:28:20,204 - src.pr_analyzer.llm_client - ERROR - Error checking ollama models: Model llama3:latest not available. Please install it with: ollama pull llama3:latest
+2025-07-31 16:28:42,989 - src.pr_analyzer.repomix_integration - INFO - Repomix version: 0.2.9
+2025-07-31 16:28:42,997 - httpx - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-07-31 16:28:42,998 - src.pr_analyzer.github_client - INFO - Fetching PR data for openshift/openshift-docs#96102
+2025-07-31 16:28:49,169 - src.pr_analyzer.repomix_integration - INFO - Cloning https://github.com/openshift/openshift-docs.git (branch: main) to /var/folders/dl/4zwbw1351rj_bwkcm2g16bzm0000gn/T/pr_analyzer_focused_openshift_openshift-docs
+2025-07-31 16:29:13,736 - src.pr_analyzer.repomix_integration - INFO - Successfully cloned repository to /var/folders/dl/4zwbw1351rj_bwkcm2g16bzm0000gn/T/pr_analyzer_focused_openshift_openshift-docs
+2025-07-31 16:29:55,494 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 16:30:06,065 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 16:30:17,652 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 16:30:30,476 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 16:30:41,348 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 16:30:41,406 - src.pr_analyzer.document_generator - INFO - PR analysis report saved to analysis_outputs/pr_summaries/OpenShift_OVNK_MTU_Update_PR96102.docx
+2025-07-31 16:44:24,076 - src.pr_analyzer.repomix_integration - INFO - Repomix version: 0.2.9
+2025-07-31 16:44:24,084 - httpx - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-07-31 16:44:24,085 - src.pr_analyzer.github_client - INFO - Fetching PR data for openshift/openshift-docs#96102
+2025-07-31 16:44:30,384 - src.pr_analyzer.repomix_integration - INFO - Cloning https://github.com/openshift/openshift-docs.git (branch: main) to /var/folders/dl/4zwbw1351rj_bwkcm2g16bzm0000gn/T/pr_analyzer_focused_openshift_openshift-docs
+2025-07-31 16:44:55,562 - src.pr_analyzer.repomix_integration - INFO - Successfully cloned repository to /var/folders/dl/4zwbw1351rj_bwkcm2g16bzm0000gn/T/pr_analyzer_focused_openshift_openshift-docs
+2025-07-31 16:45:30,718 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 16:45:40,969 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 16:45:56,762 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 16:46:07,790 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 16:46:17,676 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 16:46:17,742 - src.pr_analyzer.document_generator - INFO - PR analysis report saved to analysis_outputs/pr_summaries/OpenShift_OVNK_MTU_Enhanced_Analysis.docx
+2025-07-31 19:21:38,385 - src.pr_analyzer.repomix_integration - INFO - Repomix version: 0.2.9
+2025-07-31 19:21:38,402 - httpx - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-07-31 19:21:50,833 - src.pr_analyzer.repomix_integration - INFO - Repomix version: 0.2.9
+2025-07-31 19:21:50,840 - httpx - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-07-31 19:21:56,299 - src.pr_analyzer.github_client - INFO - Fetching PR data for openshift/openshift-docs#96102
+2025-07-31 19:22:02,903 - src.pr_analyzer.repomix_integration - INFO - Cloning https://github.com/openshift/openshift-docs.git (branch: main) to /var/folders/dl/4zwbw1351rj_bwkcm2g16bzm0000gn/T/pr_analyzer_focused_openshift_openshift-docs
+2025-07-31 19:22:14,657 - src.pr_analyzer.repomix_integration - INFO - Successfully cloned repository to /var/folders/dl/4zwbw1351rj_bwkcm2g16bzm0000gn/T/pr_analyzer_focused_openshift_openshift-docs
+2025-07-31 19:22:49,928 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 19:23:03,914 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 19:23:16,779 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 19:23:30,396 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 19:23:46,909 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-07-31 19:23:46,987 - src.pr_analyzer.document_generator - INFO - PR analysis report saved to output/PR_Analysis_OCPBUGS57322 Update the default MTU statement in O_20250731_192346.docx

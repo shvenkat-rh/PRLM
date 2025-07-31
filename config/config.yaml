@@ -1,0 +1,47 @@
+# PR Analyzer Configuration
+
+# GitHub API Settings
+github:
+  token_env_var: "GITHUB_TOKEN"
+  api_timeout: 30
+  max_retries: 3
+
+# LLM Settings
+llm:
+  default_model: "llama3:latest"
+  temperature: 0.1
+  max_tokens: 2048
+  timeout: 300
+
+# Repomix Settings  
+repomix:
+  timeout: 300
+  ignore_patterns:
+    - "node_modules"
+    - "dist"
+    - "build"
+    - ".git"
+    - ".vscode"
+    - "*.log"
+    - "*.tmp"
+    - "__pycache__"
+    - "*.pyc"
+  max_file_size_kb: 1024
+
+# Analysis Settings
+analysis:
+  max_files_to_analyze: 15
+  max_comments_to_display: 10
+  max_commits_to_display: 10
+  
+# Output Settings
+output:
+  default_directory: "output"
+  include_appendix: true
+  include_file_analysis: true
+  
+# Logging
+logging:
+  level: "INFO"
+  log_file: "pr_analyzer.log"
+  max_log_size_mb: 10 
