@@ -11,7 +11,7 @@ Your project is now configured for automated PyPI publishing with:
 - ✅ `LICENSE` - MIT license for open source distribution
 - ✅ GitHub Actions workflow (`.github/workflows/publish-pypi.yml`)
 - ✅ Proper package structure with entry points
-- ✅ CLI commands: `pr-analyzer` and `pr-analyzer-gui`
+- ✅ CLI commands: `prlm` and `prlm-gui`
 
 ## 🔐 Setting Up PyPI Publishing
 
@@ -20,7 +20,7 @@ Your project is now configured for automated PyPI publishing with:
 1. **Create a PyPI account** at https://pypi.org/account/register/
 2. **Go to Publishing** at https://pypi.org/manage/account/publishing/
 3. **Add a new pending publisher** with these details:
-   - **PyPI project name**: `pr-analyzer`
+   - **PyPI project name**: `prlm`
    - **Owner**: `shvenkat-rh`
    - **Repository name**: `PRLM`
    - **Workflow name**: `publish-pypi.yml`
@@ -81,26 +81,26 @@ If you prefer to use API tokens instead of trusted publishing:
      ## 🎉 Initial Release - PR Analyzer v1.0.0
      
      ### 🌟 Features
-     - AI-powered GitHub Pull Request analysis
-     - Professional Streamlit GUI interface
-     - Command-line interface with `pr-analyzer` command
+           - AI-powered GitHub Pull Request analysis
+      - Professional Streamlit GUI interface
+      - Command-line interface with `prlm` command
      - Comprehensive timeline and conversation analysis
      - Word document report generation
      - Enterprise-grade security with local processing
      
-     ### 🚀 Installation
-     ```bash
-     pip install pr-analyzer
-     ```
-     
-     ### 📖 Usage
-     ```bash
-     # Launch GUI
-     pr-analyzer-gui
-     
-     # CLI analysis
-     pr-analyzer https://github.com/owner/repo/pull/123
-     ```
+           ### 🚀 Installation
+      ```bash
+      pip install prlm
+      ```
+      
+      ### 📖 Usage
+      ```bash
+      # Launch GUI
+      prlm-gui
+      
+      # CLI analysis
+      prlm https://github.com/owner/repo/pull/123
+      ```
      
      ### 📊 What's Included
      - Advanced PR metrics and timeline analysis
@@ -119,10 +119,10 @@ If you prefer to use API tokens instead of trusted publishing:
 # Login to GitHub
 gh auth login
 
-# Create and publish a release
-gh release create v1.0.0 \
-  --title "PR Analyzer v1.0.0" \
-  --notes "Initial release with AI-powered PR analysis and professional GUI"
+ # Create and publish a release
+ gh release create v1.0.0 \
+   --title "PRLM v1.0.0" \
+   --notes "Initial release with AI-powered PR analysis and professional GUI"
 ```
 
 ### Method 3: Git Tags + GitHub Release
@@ -152,7 +152,7 @@ git push origin v1.0.0
 3. Click on the run to see detailed logs
 
 ### Check PyPI
-1. Visit https://pypi.org/project/pr-analyzer/
+1. Visit https://pypi.org/project/prlm/
 2. Verify your package appears with the correct version
 3. Check that the description and metadata look correct
 
@@ -162,16 +162,16 @@ Once published, users can install your package:
 
 ```bash
 # Install the package
-pip install pr-analyzer
+pip install prlm
 
 # Launch the professional GUI
-pr-analyzer-gui
+prlm-gui
 
 # Use the CLI for analysis
-pr-analyzer https://github.com/microsoft/vscode/pull/12345
+prlm https://github.com/microsoft/vscode/pull/12345
 
 # Get help
-pr-analyzer --help
+prlm --help
 ```
 
 ## 🔄 Updating Versions
@@ -236,6 +236,6 @@ Every time you create a GitHub release, your package will be automatically:
 - ✅ Tested across multiple Python versions
 - ✅ Built into proper distribution packages
 - ✅ Published to PyPI
-- ✅ Available for installation with `pip install pr-analyzer`
+- ✅ Available for installation with `pip install prlm`
 
 Happy publishing! 🚀 
